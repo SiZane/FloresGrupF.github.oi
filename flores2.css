@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: #260f26;    
+}
+body{   
+	font-family: 'Signika', sans-serif;
+    background-color: #d9f5e5;
+}
+nav{
+    background: #86CB92;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    font-family: 'Tiro Devanagari Sanskrit', serif;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul.aa{
+    float: right;
+    margin-right: 20px;
+}
+nav ul.aa li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;    
+}
+nav ul.aa li a{
+    color: #260f26;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+a.active,a:hover{
+    background: #71b48d;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul.aa{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #7fc99d;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul.aa li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul.aa li a{
+        font-size: 20px;
+    }
+    a:hover,a:active{
+        background: none;
+        color: #251f47;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+.d-block {
+    height: 635px;
+}
+
+.carousel-slide {
+    height: 100%;
+}
+
+.card {
+    background-color: #9fceb3;
+}
+.infotitle {
+    font-weight: bold;
+}
+.sectiontitle {
+    background-color: #260f26; 
+    text-align: center;
+    color: #86CB92;
+}
+
+.blog {
+    width: 100%;
+    height: 638px;
+    display: flex;
+
+}
+
+.blog h1 {
+    text-align: center;
+}
+.blog p{
+    text-align: center;
+}
+.plant, .animal {
+    background-color: #251f47;
+}
+.donate {
+    width: 100%;
+    height: 319px;
+}
